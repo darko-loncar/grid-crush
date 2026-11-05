@@ -1,0 +1,11 @@
+# Build outputs
+/gridcrush
+/gridcrush-debug
+/tests/matrix_test
+/tests/tetroid_test
+/build/
+/cmake-build-*/
+
+# Local editor configuration and unrelated utility
+/.vscode/
+/text_editor/
