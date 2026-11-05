@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Gridcrush
+Comment=A falling-block puzzle game
+Exec=gridcrush
+Icon=gridcrush
+Terminal=false
+Type=Application
+Categories=Game;Arcade;
+StartupNotify=false
