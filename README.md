@@ -1,13 +1,17 @@
 # Gridcrush
 
-Gridcrush is a work-in-progress falling-block puzzle game written in C with SDL3. It includes a familiar seven-piece mode; new features and improvements are planned.
+Gridcrush is a work-in-progress falling-block puzzle game written in C with SDL3. It includes the classic seven-piece set, with new features and improvements planned.
+
+## Screenshot
+
+![Gridcrush gameplay](screenshot.png)
 
 ## Features
 
 - Ghost piece and a three-piece preview queue
 - Wall-kick-assisted rotation
 - Soft drop, hard drop, pause, and new-game controls
-- Animated line clears and a generated piece-lock sound
+- Instant line clears and a generated piece-lock sound
 - Nintendo-style line-clear scoring and gravity progression
 
 
@@ -52,7 +56,9 @@ The build copies the required `assets/` directory next to the game executable. T
 
 ## Project layout
 
-- `main.c`, `ui.c`: game loop, input, and interface
+- `main.c`: game loop and state management
+- `input.c`, `input.h`: keyboard and mouse input
+- `ui.c`, `ui.h`: dashboard, status, and buttons
 - `tetroid.c`, `tetroid.h`: piece generation, movement rules, scoring, and level progression
 - `matrix.c`, `matrix.h`: generic matrix operations
 - `draw.c`, `draw.h`: SDL rendering helpers
